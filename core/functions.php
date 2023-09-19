@@ -55,9 +55,9 @@ function inMultiArray($elem, $array): bool
     return false;
 }
 
-function redirect(string $path): void
+function redirect(string $path = ""): void
 {
-    header("Location: " . $_ENV['FRONTEND_URL'] . $path);
+    header("Location: " . ROOT . $path);
     die();
 }
 
@@ -77,4 +77,3 @@ function cmp ($a, $b): int
         }
     }
 }
-

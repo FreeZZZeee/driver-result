@@ -18,7 +18,7 @@ class Home
         }
 
         if (array_key_exists('refresh', $_POST)) {
-            redirect("/");
+            redirect();
         }
 
         $this->view('home', $data);
